@@ -17,7 +17,7 @@
 
 ## 📊 Test Report
 
-**View the live report:** [jgupta-git.github.io/testNG-selenium-ui-framework/test-report.html](https://jgupta-git.github.io/testNG-selenium-ui-framework/test-report.html)
+**View the live report:** [jgupta-git.github.io/testNG-selenium-ui-framework/docs/test-report.html](https://jgupta-git.github.io/testNG-selenium-ui-framework/docs/test-report.html)
 
 The report contains each test's result (passed, failed or skipped), its log lines, and a screenshot taken during the test.
 
