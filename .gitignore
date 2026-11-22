@@ -1,0 +1,19 @@
+# Build output (compiled classes, reports, screenshots)
+target/
+
+# Eclipse project files (generated)
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs and OS files
+*.log
+Thumbs.db
+.DS_Store

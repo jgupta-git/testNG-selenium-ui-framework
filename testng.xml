@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Simple suite for the basics tests.
+  parallel="classes": each test class runs in its own thread at the same time.
+  Tests inside one class still run one after another, so the shared driver field stays safe.
+-->
+<suite name="Basics Suite" parallel="classes" thread-count="3">
+
+    <!-- Listener: TestNG calls SimpleListener for every test event. -->
+    <listeners>
+        <listener class-name="com.saucedemo.utils.SimpleListener"/>
+    </listeners>
+
+    <test name="Basics Tests">
+        <!-- Skip the demo that fails on purpose. Remove this block to include it. -->
+        <groups>
+            <run>
+                <exclude name="timeout-demo"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.saucedemo.tests.LoginTest"/>
+            <class name="com.saucedemo.tests.InventoryTest"/>
+            <class name="com.saucedemo.tests.AdvancedTests"/>
+        </classes>
+    </test>
+
+</suite>
